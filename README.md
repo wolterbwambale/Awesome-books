@@ -46,7 +46,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](git@github.com:wolterbwambale/Awesome-books.git)
+- [Live Demo Link](https://wolterbwambale.github.io/Awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
