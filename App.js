@@ -1,4 +1,11 @@
+function loadFromLocalStorage() {
+  return JSON.parse(localStorage.getItem('booksCollection'));
+}
 let booksCollection = loadFromLocalStorage() || [];
+
+function saveToLocalStorage() {
+  localStorage.setItem('booksCollection', JSON.stringify(booksCollection));
+}
 
 function Book(title, author) {
   this.title = title;
@@ -6,7 +13,9 @@ function Book(title, author) {
 }
 
 function removeBookFromCollection(title, author) {
-  booksCollection = booksCollection.filter((book) => book.title !== title || book.author !== author);
+  booksCollection = booksCollection.filter(
+    (book) => book.title !== title || book.author !== author,
+  );
   saveToLocalStorage();
 }
 
@@ -17,7 +26,8 @@ function displayBooks() {
   for (let i = 0; i < booksCollection.length; i += 1) {
     const book = booksCollection[i];
     const bookElement = document.createElement('div');
-    bookElement.innerHTML = `<p>Title: ${book.title}</p><p>Author: ${book.author}</p>`;
+    bookElement.innerHTML = `<p>Title: ${book.title}</p>
+                             <p>Author: ${book.author}</p>`;
 
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
@@ -37,22 +47,14 @@ function addBookToCollection(title, author) {
   displayBooks();
 }
 
-function loadFromLocalStorage() {
-  return JSON.parse(localStorage.getItem('booksCollection'));
-}
-
-function saveToLocalStorage() {
-  localStorage.setItem('booksCollection', JSON.stringify(booksCollection));
-}
-
 const addButton = document.getElementById('add-button');
 addButton.addEventListener('click', (event) => {
-  event.preventDefault(); 
+  event.preventDefault();
   const titleInput = document.getElementById('title');
   const authorInput = document.getElementById('author');
   addBookToCollection(titleInput.value, authorInput.value);
-  titleInput.value = ''; 
-  authorInput.value = ''; 
+  titleInput.value = '';
+  authorInput.value = '';
 });
 
 displayBooks();
