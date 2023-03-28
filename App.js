@@ -4,4 +4,7 @@ class Book {
     this.author = author;
   }
   //Method for adding book
+  addBook () {
+    const newBook = new Book(title, author)
+  }
 }
