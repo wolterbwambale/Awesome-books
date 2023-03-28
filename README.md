@@ -82,8 +82,8 @@ Click on bottom menu icon Go Live to see the project.
 
 👤 **Wolter Bwambale**
 
-- GitHub: [@innocent259](https://github.com/Innocent259)
-- LinkedIn: [Ndahimana Innocent](https://www.linkedin.com/in/innocent-ndahimana-b4b870245/)
+- GitHub: [@Bwambale](https://github.com/Innocent259)
+- LinkedIn: [Bwambale](https://www.linkedin.com/in/bwambale-benny-wolter-a9284925a/)
 
 👤 **Jesse Kayigire**
 
