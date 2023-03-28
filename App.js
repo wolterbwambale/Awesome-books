@@ -1,9 +1,10 @@
+
+let booksCollection = []; 
 function Book(title, author) {
     this.title = title;
     this.author = author;
   }
   
-  let booksCollection = []; 
   function removeBookFromCollection(title, author) {
     booksCollection = booksCollection.filter((book) => book.title !== title || book.author !== author);
   }
