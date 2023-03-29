@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="App.css">
     <title>Awesome Book App</title>
 </head>
 <body>
     <!-- <h1>Awesome books</h1> -->
-    <section id="book-list" class="first-section">
-    </section>
+    <!-- <fieldset class="book-details"> -->
+        <h2>All awesome books</h2>
+        <section class="first-section">
+            <div id="book-list"></div>
+        </section>
+    <!-- </fieldset> -->
+    <hr> <br>
     <form class="awesome-form">
+        <h3>Add a new book</h3>
         <input type="text" name="title" id="title" placeholder="Title" required><br><br>
         <input type="text" name="auther" id="author" placeholder="Author" required><br><br>
         <button type="submit" id="add-button">Add</button>

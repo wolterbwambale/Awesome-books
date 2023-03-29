@@ -40,8 +40,10 @@ class Library {
     for (let i = 0; i < this.booksCollection.length; i++) {
       const book = this.booksCollection[i];
       const bookElement = document.createElement('div');
-      bookElement.innerHTML = `<h2>All awesome books</h2><p>Title: ${book.title}</p><p>Author: ${book.author}</p>`;
+      bookElement.className = "dynamic-container";
+      bookElement.innerHTML = `<div class="author-paragraph"><p>"${book.title}" by</p><p>${book.author}</p></div>`;
       const removeButton = document.createElement('button');
+      removeButton.className = "dynamic-button";
       removeButton.textContent = 'Remove';
       removeButton.addEventListener('click', () => {
         this.removeBookFromCollection(book.title, book.author);
