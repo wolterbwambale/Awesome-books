@@ -18,8 +18,11 @@ class Library {
   }
 
   addBookToCollection() {
-    const title = this.titleInput.value;
-    const author = this.authorInput.value;
+    const title = this.titleInput.value.trim();
+    const author = this.authorInput.value.trim();
+    if (!title || !author) {
+      return;
+    }
     const newBook = new Book(title, author);
     this.booksCollection.push(newBook);
     localStorage.setItem('booksCollection', JSON.stringify(this.booksCollection));
@@ -29,11 +32,14 @@ class Library {
   }
 
   removeBookFromCollection(title, author) {
-    this.booksCollection = this.booksCollection.filter(
-      (book) => book.title !== title || book.author !== author,
+    const bookIndex = this.booksCollection.findIndex(
+      (book) => book.title === title && book.author === author,
     );
-    localStorage.setItem('booksCollection', JSON.stringify(this.booksCollection));
-    this.displayBooks();
+    if (bookIndex !== -1) {
+      this.booksCollection.splice(bookIndex, 1);
+      localStorage.setItem('booksCollection', JSON.stringify(this.booksCollection));
+      this.displayBooks();
+    }
   }
 
   displayBooks() {
