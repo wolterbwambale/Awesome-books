@@ -1,29 +1,39 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  width: 100%;
+  font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 5rem 2rem;
   text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 5rem;
 }
-
+.book-holder {
+  border: 2px solid #fff;
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
 .dynamic-container {
   display: flex;
   justify-content: space-between;
 }
 
-.even {
-  background-color: aqua;
+.odd {
+  background-color: #ddd;
 }
 
-.odd {
-  background-color: green;
+.even {
+  background-color: #fff;
 }
+
+
 .author-paragraph {
   display: flex;
   gap: 2px;
@@ -32,20 +42,41 @@ body {
 .dynamic-button {
   float: right;
   padding: 5px;
-  margin-right: 10px;
 }
 
 hr {
   width: 80px;
-  margin: 10px 37rem 0 ;
-}
-
-.first-section {
-  width: 300px;
-  height: 70vh;
-  border: solid black 2px;
-}
-
-.first-section {
+  align-items: center;
+  border: 1px solid #ddd;
   margin: auto;
+}
+
+.first-section {
+  height: auto;
+}
+
+
+.awesome-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  padding: 2%;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+input {
+  width: 100%;
+  margin: auto;
+}
+
+#add-button {
+  width: 20%;
+  align-self: flex-end;
+  margin-top: -20px;
 }
