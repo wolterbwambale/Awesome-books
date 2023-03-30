@@ -18,9 +18,13 @@
         "js": "always", "json": "always"
       }]
     },
+    
     "ignorePatterns": [
       "dist/",
       "build/"
     ]
   }
+
+  // eslint-disable rule-you-want-to-disable 
+  
   

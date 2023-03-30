@@ -87,8 +87,8 @@ Click on bottom menu icon Go Live to see the project.
 
 👤 **Jesse Kayigire**
 
-- GitHub: [@innocent259](https://github.com/Innocent259)
-- LinkedIn: [Ndahimana Innocent](https://www.linkedin.com/in/innocent-ndahimana-b4b870245/)
+- GitHub: [@Jesse](https://github.com/Jessekay)
+- LinkedIn: [Jesse Kayigire](https://www.linkedin.com/in/kayigire/)
 
 👤 **Innocent Ndahimana**
 
