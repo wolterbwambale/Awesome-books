@@ -15,9 +15,15 @@ body {
 .dynamic-container {
   display: flex;
   justify-content: space-between;
-  background: grey;
 }
 
+.even {
+  background-color: aqua;
+}
+
+.odd {
+  background-color: green;
+}
 .author-paragraph {
   display: flex;
   gap: 2px;
@@ -25,7 +31,8 @@ body {
 
 .dynamic-button {
   float: right;
-  background: red;
+  padding: 5px;
+  margin-right: 10px;
 }
 
 hr {

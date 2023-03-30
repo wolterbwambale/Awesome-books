@@ -1,3 +1,4 @@
+// eslint-disable-next-line max-classes-per-file
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -29,7 +30,7 @@ class Library {
 
   removeBookFromCollection(title, author) {
     this.booksCollection = this.booksCollection.filter(
-      (book) => book.title !== title || book.author !== author
+      (book) => book.title !== title || book.author !== author,
     );
     localStorage.setItem('booksCollection', JSON.stringify(this.booksCollection));
     this.displayBooks();
@@ -40,10 +41,10 @@ class Library {
     for (let i = 0; i < this.booksCollection.length; i++) {
       const book = this.booksCollection[i];
       const bookElement = document.createElement('div');
-      bookElement.className = "dynamic-container";
+      bookElement.className = 'dynamic-container';
       bookElement.innerHTML = `<div class="author-paragraph"><p>"${book.title}" by</p><p>${book.author}</p></div>`;
       const removeButton = document.createElement('button');
-      removeButton.className = "dynamic-button";
+      removeButton.className = 'dynamic-button';
       removeButton.textContent = 'Remove';
       removeButton.addEventListener('click', () => {
         this.removeBookFromCollection(book.title, book.author);
