@@ -42,8 +42,7 @@ class Library {
       const book = this.booksCollection[i];
       const bookElement = document.createElement('div');
       bookElement.className = i % 2 === 0 ? 'even dynamic-container' : 'odd dynamic-container';
-      bookElement.innerHTML = 
-      `<div class="book-holder">
+      bookElement.innerHTML = `<div class="book-holder">
       <div class="author-paragraph">
         <p>"${book.title}"</p>
         <span>by</span>
