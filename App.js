@@ -38,7 +38,7 @@ class Library {
 
   displayBooks() {
     this.booksContainer.innerHTML = '';
-    for (let i = 0; i < this.booksCollection.length; i++) {
+    for (let i = 0; i < this.booksCollection.length; i += 1) {
       const book = this.booksCollection[i];
       const bookElement = document.createElement('div');
       bookElement.className = 'dynamic-container';
@@ -54,5 +54,5 @@ class Library {
     }
   }
 }
-
+// eslint-disable-next-line no-unused-vars
 const library = new Library();
