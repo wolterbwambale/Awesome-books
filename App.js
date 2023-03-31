@@ -69,15 +69,15 @@ class Library {
 // eslint-disable-next-line no-unused-vars
 const library = new Library();
 
-const headerLinks = document.querySelector("#header");
-const popList = document.querySelector('#pop-list')
-const listOfBooks = document.querySelector('#book-lists')
-const popAdded = document.querySelector('#pop-added')
-const addBook = document.querySelector('.add-book-section')
-const popContact = document.querySelector('#pop-contact')
-const showContact = document.querySelector('.contact')
+const headerLinks = document.querySelector('#header');
+const popList = document.querySelector('#pop-list');
+const listOfBooks = document.querySelector('#book-lists');
+const popAdded = document.querySelector('#pop-added');
+const addBook = document.querySelector('.add-book-section');
+const popContact = document.querySelector('#pop-contact');
+const showContact = document.querySelector('.contact');
 
-headerLinks.addEventListener("click", function(e) {
+headerLinks.addEventListener('click', (e) => {
   e.preventDefault();
   const currentLink = e.target;
   if (currentLink === popList) {

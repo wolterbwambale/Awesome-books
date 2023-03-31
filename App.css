@@ -9,14 +9,17 @@ body {
   margin: 0;
   width: 100%;
 }
+
 .menu-wrap {
   width: 100%;
   padding: 1rem;
 }
+
 .header-11 {
   text-align: center;
   margin-bottom: 1rem;
 }
+
 .nav-bar {
   display: flex;
   border: solid green 2px;
@@ -53,12 +56,15 @@ body {
   text-decoration: none;
   color: black;
 }
+
 .nav-link a:active {
-  color: rgb(0, 255,0);
+  color: rgb(0, 255, 0);
 }
+
 .added-book-section {
   display: none;
 }
+
 .show-list {
   display: flex;
   flex-direction: column;
@@ -110,9 +116,6 @@ hr {
   margin: auto;
 }
 
-.first-section {
-  height: auto;
-}
 .add-book-section {
   display: none;
 }
@@ -151,6 +154,7 @@ input {
 .contact {
   display: none;
 }
+
 .show-contact {
   margin: auto;
   padding: 1rem;
