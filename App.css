@@ -10,8 +10,45 @@ body {
   flex-direction: column;
   margin: auto;
   text-align: center;
-  width: 50%;
+  width: 100%;
   padding: 5rem;
+}
+
+.menu-wrap {
+  display: flex;
+  border: solid green 2px;
+  padding: 20px;
+  margin: -66px 0 0 0;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  margin-left: 17rem;
+}
+
+.brand {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link {
+  display: flex;
+  margin: 0 20px 0 0;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.first-section {
+  display: flex;
+  margin-top: 10rem;
 }
 
 .book-holder {
